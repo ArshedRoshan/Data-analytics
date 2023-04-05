@@ -18,7 +18,7 @@ print('yy',y)
 
 
 # split data into tarining and testing sets
-np.random.seed(123)
+
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2)
 logreg = LogisticRegression(max_iter=1000)
 logreg.fit(x_train, y_train)
